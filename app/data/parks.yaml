@@ -1,0 +1,191 @@
+columns:
+  - name: name
+    type: string
+  - name: visited
+    type: boolean
+  - name: region
+    type: string
+  - name: distance
+    type: string
+  - name: camping
+    type: array
+    items:
+      type: icon
+  - name: notes
+    type: string
+icons:
+  camping:
+    - name: backpack
+      type: Hiking
+      alt: Backpack
+    - name: cabin
+      type: Cabin
+      alt: Cabin
+    - name: canoe-in
+      type: Kayaking
+      alt: Canoe-in
+    - name: cart-in
+      icon: ShoppingCart
+      alt: Cart-in
+    - name: dispersed
+      type: Forest
+      alt: Dispersed
+    - name: none
+      type: DoNotDisturb
+      alt: None
+
+data:
+  - name: Banning State Park
+    camping:
+      - cabin
+      - canoe-in
+    distance: 1.5 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00103#homepage
+    region: Central
+  - name: Bear Head Lake State Park
+    camping:
+      - backpack
+      - cabin
+      - canoe-in
+    distance: 3:45 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00109#homepage
+    region: Northeast (Superior National Forest)
+  - name: Cascade River State Park
+    camping:
+      - backpack
+    distance: 4 hr
+    hike-in: true
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00133#homepage
+    region: Northeast (North Shore)
+  - name: George H. Crosby Manitou State Park
+    camping:
+      - backpack
+    distance: 3:45 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00163#homepage
+    region: Northeast (North Shore)
+    visited: true
+  - name: Gooseberry Falls State Park
+    camping:
+      - none
+    distance: 3 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00172#homepage
+    region: Northeast (North Shore)
+    visited: true
+  - name: Itasca State Park
+    camping:
+      - backpack
+      - cart-in
+    distance: 3.5 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00181#homepage
+    region: Northwest
+  - name: Jay Cooke State Park
+    camping:
+      - backpack
+      - cabin
+    distance: 2 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00187#homepage
+    notes: Backpack sites are far above the water
+    region: Northeast
+    visited: true
+  - name: Lake Maria State Park
+    camping:
+      - backpack
+      - cabin
+    distance: 45 min
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00217#homepage
+    notes: Heavy mosquitoes
+    region: Central
+    visited: true
+  - name: Minnesota Valley National Wildlife Refuge
+    camping:
+      - none
+    distance: 30 min
+    link: https://www.fws.gov/refuge/minnesota-valley
+    notes: Birdwatching
+    region: Metro
+    visited: true
+  - name: Nerstrand Big Woods State Park
+    camping:
+      - cart-in
+      - backpack
+    distance: 2 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00241#homepage
+    region: Southeast
+  - name: Pillsbury State Forest
+    camping:
+      - dispersed
+    distance: 2 hr
+    link: https://www.dnr.state.mn.us/state_forests/forest.html?id=sft00039#homepage
+    region: Central
+  - name: Scenic State Park
+    camping:
+      - backpack
+      - canoe-in
+    distance: 3:45 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00262#homepage
+    region: Northeast
+  - name: Split Rock Lighthouse State Park
+    camping:
+      - backpack
+      - cart-in
+    distance: 3:15 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00266#homepage
+    region: Northeast (North Shore)
+    visited: true
+  - name: St. Croix State Forest
+    camping:
+      - dispersed
+    distance: 1:45 hr
+    link: https://www.dnr.state.mn.us/state_forests/forest.html?id=sft00044#homepage
+    region: Northeast
+  - name: St. Croix State Park
+    camping:
+      - backpack
+      - canoe-in
+      - cabin
+    distance: 1.5 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00253#homepage
+    notes: Reddit users note heavy mosquitoes
+    region: Northeast
+  - name: Temperance River State Park
+    camping:
+      - cart-in
+    distance: 3:45 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00268#homepage
+    region: Northeast (North Shore)
+  - name: Tettegouche State Park
+    camping:
+      - cabin
+      - cart-in
+    distance: 3:30 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00269#homepage
+    region: Northeast (North Shore)
+  - name: Voyageurs National Park
+    camping:
+      - canoe-in
+    distance: 4:15 hr
+    link: https://www.nps.gov/voya/index.htm
+    notes: Water taxi to backcountry sites
+    region: Northeast
+  - name: Whitewater State Park
+    cabin: true
+    camping:
+      - cabin
+      - cart-in
+    distance: 2 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00280#homepage
+    region: Central
+  - name: Wild River State Park
+    camping:
+      - backpack
+      - cabin
+      - canoe-in
+    distance: 1 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00254#homepage
+    region: Central
+  - name: William O'Brien State Park
+    camping:
+      - cabin
+    distance: 1 hr
+    link: https://www.dnr.state.mn.us/state_parks/park.html?id=spk00283#homepage
+    region: Metro
