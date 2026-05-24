@@ -27,7 +27,7 @@ const MUI_ICONS = {
 
 // Build map from camping name → { Icon, alt } using the YAML icons section
 const campingIconMap = Object.fromEntries(
-  (rawData.icons?.camping ?? []).map(entry => {
+  (rawData.icons?.campsites ?? []).map(entry => {
     const iconName = entry.icon ?? entry.type
     return [entry.name, { Icon: MUI_ICONS[iconName], alt: entry.alt }]
   })
@@ -54,7 +54,7 @@ function formatHeader(name) {
   return name.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
-const columnWidths = { name: 260, region: 200, distance: 110, camping: 160 }
+const columnWidths = { name: 260, region: 200, distance: 110, campsites: 160 }
 
 const columns = rawData.columns.map(col => ({
   field: col.name,
