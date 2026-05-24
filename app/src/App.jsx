@@ -62,6 +62,7 @@ const columns = rawData.columns.map(col => ({
   sortable: col.type !== 'array' && col.name !== 'notes',
   ...(col.type === 'boolean' ? { width: 90, align: 'center', headerAlign: 'center', renderCell: ({ value }) => value ? <CheckIcon fontSize="small" /> : '' } : {}),
   ...(col.type === 'array' ? { renderCell: ({ value }) => <CampingIcons value={value} /> } : {}),
+  ...(col.name === 'name' ? { renderCell: ({ value, row }) => row.link ? <a href={row.link} target="_blank" rel="noreferrer">{value}</a> : value } : {}),
   ...(col.name in columnWidths ? { width: columnWidths[col.name] } : {}),
   ...(col.name === 'notes' ? { flex: 1, minWidth: 200 } : {}),
 }))
@@ -71,6 +72,7 @@ export default function App() {
     () =>
       rawData.data.map((park, i) => ({
         id: i,
+        link: park.link ?? '',
         ...Object.fromEntries(
           rawData.columns.map(col => [
             col.name,

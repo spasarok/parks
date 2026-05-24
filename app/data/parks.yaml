@@ -33,7 +33,6 @@ icons:
     - name: none
       type: DoNotDisturb
       alt: None
-
 data:
   - name: Banning State Park
     camping:
