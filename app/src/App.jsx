@@ -209,7 +209,7 @@ export default function App() {
       <PageBackground />
       <Box sx={{ p: { xs: 2, md: 3 } }}>
         <Typography variant="h4" gutterBottom sx={{ color: COLORS.forest }}>
-          Minnesota Parks
+          Camps & Trails Bucket List
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           {rawData.data.length} park{rawData.data.length !== 1 ? 's' : ''}
