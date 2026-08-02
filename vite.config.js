@@ -7,7 +7,7 @@ export default defineConfig({
   base: './',
   plugins: [react(), yaml(), viteSingleFile()],
   build: {
-    outDir: '../docs',
+    outDir: 'docs',
     target: 'esnext',
     assetsInlineLimit: 100_000_000,
   },

@@ -1,5 +1,8 @@
 .idea/
-app/node_modules/
+node_modules/
 archives/
 scratch/
 .DS_Store
+
+# Built by CI (see .github/workflows/deploy.yml)
+/docs
